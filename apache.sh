@@ -43,4 +43,4 @@ systemctl start httpd
 systemctl enable php-fpm
 systemctl enable httpd
 
-echo "All Configured: http://arch.$domainname.net:8080"
+echo "\033[0;36m All Configured: http://arch.$domainname.net:8080"
