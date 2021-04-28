@@ -36,3 +36,11 @@ sudo sed -i "s/devserver/"$domainname"/g" /etc/hosts
 sudo sed -i "s/devserver/"$domainname"/g" /etc/httpd/conf/httpd.conf
 sudo sed -i "s/devserver/"$domainname"/g" /etc/httpd/conf/vhosts/ap1.conf
 sudo sed -i "s/devserver/"$domainname"/g" /etc/httpd/conf/vhosts/ap2.conf
+
+## Start and Enable services
+systemctl start php-fpm
+systemctl start httpd
+systemctl enable php-fpm
+systemctl enable httpd
+
+echo "All Configured: http://arch.$domainname.net:8080"
