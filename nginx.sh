@@ -29,7 +29,7 @@ sudo cp index.* /usr/share/nginx/ng2
 
 ## Change html page to display vhost name
 sudo sed -i 's/Apache!/NGINX!NG1/g' /usr/share/nginx/ng1/index.html
-sudo sed -i 's/Apache!/NGINX!NG2/g' /usr/share/nginx/ng1/index.html
+sudo sed -i 's/Apache!/NGINX!NG2/g' /usr/share/nginx/ng2/index.html
 
 ##  Replace domain name in all config files to separate dev/test/prod
 sudo sed -i "s/devserver/"$domainname"/g" /etc/hosts
