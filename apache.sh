@@ -32,7 +32,7 @@ sudo sed -i 's/Apache!/Apache!AP1/g' /srv/http/ap1/index.html
 sudo sed -i 's/Apache!/Apache!AP2/g' /srv/http/ap2/index.html
 
 ##  Replace domain name in all config files to separate dev/test/prod
-sed -i "s/devserver/"$domainname"/g" /etc/hosts
-sed -i "s/devserver/"$domainname"/g" /etc/httpd/conf/httpd.conf
-sed -i "s/devserver/"$domainname"/g" /etc/httpd/conf/vhosts/ap1.conf
-sed -i "s/devserver/"$domainname"/g" /etc/httpd/conf/vhosts/ap2.conf
+sudo sed -i "s/devserver/"$domainname"/g" /etc/hosts
+sudo sed -i "s/devserver/"$domainname"/g" /etc/httpd/conf/httpd.conf
+sudo sed -i "s/devserver/"$domainname"/g" /etc/httpd/conf/vhosts/ap1.conf
+sudo sed -i "s/devserver/"$domainname"/g" /etc/httpd/conf/vhosts/ap2.conf
